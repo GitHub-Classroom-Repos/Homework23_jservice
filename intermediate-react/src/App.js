@@ -14,7 +14,7 @@ function App() {
     Axios.get("http://jservice.io/api/random").then((res) => {
       setQuestion(res.data[0].question);
       setValue(res.data[0].value);
-      setAnswer("");
+      setAnswer();
     });
   };
 
