@@ -18,9 +18,6 @@ function App() {
     });
   };
 
-  const showAnswer = () => {
-    setAnswer(res.data[0].answer); // Set the answer state variable to the correct value
-  };
 
 
   const finalScore = () => {
@@ -46,9 +43,7 @@ function App() {
       <button onClick={fetchQuestion}>Fetch Question</button>
       <button onClick={increaseValue}>Increase Value</button>
       <button onClick={decreaseValue}>Decrease Value</button>
-      <button onClick={showAnswer}>Show Answer</button>
       <p>Question: {question}</p>
-      {answer && <p>Answer: {answer}</p>}
       <p>Value: {value}</p>
       <p>Increase Value: {total}</p>
       <p>Decrease Value: {decrease}</p>
